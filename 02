@@ -1,0 +1,34 @@
+
+public class TesteQuatro {
+
+	public static void main(String[] args) {
+
+		float SP = 67836.43f;
+		float RJ = 36678.66f;
+		float MG = 29229.88f;
+		float ES = 27165.48f;
+		float outros = 19849.53f;
+		float TotalMensal = SP + RJ + MG + ES + outros;
+
+		float percentualSp;
+		float percentualRj;
+		float percentualMg;
+		float percentualEs;
+		float percentualoutros;
+
+		percentualSp = (SP * 100) / TotalMensal;
+		percentualRj = (RJ * 100) / TotalMensal;
+		percentualMg = (MG * 100) / TotalMensal;
+		percentualEs = (ES * 100) / TotalMensal;
+		percentualoutros = (outros * 100) / TotalMensal;
+
+		System.out.println("Percentuais por Estado (%): ");
+		System.out.printf("SP: %.2f  \n", percentualSp);
+		System.out.printf("RJ: %.2f\n", percentualRj);
+		System.out.printf("MG: %.2f\n", percentualMg);
+		System.out.printf("ES: %.2f\n", percentualEs);
+		System.out.printf("Outros: %.2f\n", percentualoutros);
+
+	}
+
+}
